@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Import Vega and Vega-Lite -->
+        <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.1"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+
+        <!-- CSS file -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+    </head>
+    <body>
+        <div id="rule_map"></div>
+        <script type="text/javascript">
+            var graph = "js/immigration_rules.vl.json";
+            vegaEmbed('#rule_map', graph).then(function(result) {
+                
+            }).catch(console.error);
+        </script>
+    </body>
+</html>
